@@ -14,19 +14,15 @@
       background: url('https://img.photohub.my/i/d3/d353c26d66278c9efbc8c9fbfd99ca71.jpg') no-repeat center/cover fixed;
     }
 
-    /* 🔹 БАННЕР (БЕЗ ОБРЕЗКИ) */
+    /* 🔹 БАННЕР */
     .banner {
-      background: url('https://img.photohub.my/i/96/96d2691c6eb0fd1c4dcf8e09708f0f4b.jpg') center no-repeat;
-      background-size: contain;
-      background-color: black;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 36px;
-      font-weight: bold;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      width: 100%;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     .contacts {
@@ -78,13 +74,8 @@
     /* 🔹 КАРТИНКИ БЕЗ ОБРЕЗКИ */
     .card img {
       width: 100%;
-      height: 160px;
-      object-fit: contain;
-      background: black;
-    }
-
-    .card h3 {
-      margin: 10px 0;
+      height: auto;
+      display: block;
     }
 
     .card p {
@@ -98,16 +89,6 @@
 
       body {
         font-size: 14px;
-      }
-
-      .banner {
-        height: 220px;
-        font-size: 24px;
-        padding: 0 10px;
-      }
-
-      .contacts {
-        margin: 15px;
       }
 
       .contacts button {
@@ -127,23 +108,12 @@
         gap: 15px;
       }
 
-      .card img {
-        height: 140px;
-      }
-
       .card p {
         font-size: 13px;
-        line-height: 1.4;
       }
     }
 
     @media (max-width: 400px) {
-
-      .banner {
-        height: 180px;
-        font-size: 20px;
-      }
-
       .contacts button {
         font-size: 13px;
         padding: 10px;
@@ -160,55 +130,89 @@
 
 <div class="overlay">
 
-  <div class="banner"></div>
+  <!-- 🔹 БАННЕР -->
+  <div class="banner">
+    <img src="https://img.photohub.my/i/96/96d2691c6eb0fd1c4dcf8e09708f0f4b.jpg">
+  </div>
 
+  <!-- 🔹 КНОПКА -->
   <div class="contacts">
     <a href="https://t.me/hrs_best" target="_blank">
-      <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ ПО ТРУДОУСТРОЙСТВУ.</button>
+      <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ ПО ТРУДОУСТРОЙСТВУ</button>
     </a>
   </div>
 
+  <!-- 🔹 ОПИСАНИЕ -->
   <div class="about">
     <h2>HR SERVISE</h2>
     <p>Лучшее Кадровое Агентство в России.</p>
-    <p>Мы гордимся нашей репутацией и долгим опытом.</p>
-    <p>Работаем с 2010 года по РФ и СНГ.</p>
-    <p>Карьерный рост без застоя.</p>
+    <p>Мы гордимся нашей репутацией и долгим опытом в данной сфере работы.</p>
+    <p>Работаем с 2010 года по всей РФ и Странах СНГ.</p>
+    <p>Мы предлагаем не только работу а и карьерный рост не засиживаясь на одной вакансии</p>
   </div>
 
+  <!-- 🔹 ВАКАНСИИ -->
   <div class="vacancies">
 
     <div class="card">
       <img src="https://img.photohub.my/i/d6/d6d4e9637c8af0c6dd4f825c1fb67304.jpg">
-      <p>Возраст 14–45</p>
-      <p>600–1000р за адрес</p>
-      <p>Обучение с нуля</p>
+      <p>Возраст от 14 до 45 лет</p>
+      <p>Система выплат каждые 3 дня BTC/LTK/VISA</p>
+      <p>Оплата за адрес 600-1000р</p>
+      <p>Полное обучение с нуля</p>
+      <p>Гибкий график работы под себя</p>
+      <p>Тех поддержка 24/7</p>
+      <p>3-варианта устройства Документы/залог/наработка залога</p>
     </div>
 
     <div class="card">
       <img src="https://img.photohub.my/i/b7/b7e47f6f0ded260e2465ba283b90b212.jpg">
-      <p>Склад от 500 000р</p>
-      <p>График 5/2</p>
+      <p>Возраст от 18 лет</p>
+      <p>Система выплат каждые 3 дня BTC/LTK/VISA</p>
+      <p>Оплата за месяц от 500 000р</p>
+      <p>График работы 5/2</p>
+      <p>Полное обучение работе</p>
+      <p>2 варианта устройства</p>
+      <p>Документы/залог или повышение от курьера</p>
+      <p>Наличие водительских прав приветствуется</p>
     </div>
 
     <div class="card">
       <img src="https://img.photohub.my/i/68/683c1d778233ed641b0d229ea792925e.jpg">
-      <p>Водитель до 2500$</p>
+      <p>Возраст от 18 лет при наличии прав</p>
+      <p>Возможность работы на личном/арендном авто</p>
+      <p>Рейсы 3-4 в неделю</p>
+      <p>Оплата до 2500$</p>
+      <p>Полное обучение работе</p>
+      <p>2 варианта устройства Документы/Залог</p>
     </div>
 
     <div class="card">
       <img src="https://img.photohub.my/i/ea/ea5688113e19f0e4365cc06fa04450fb.jpg">
-      <p>Химик от 100к</p>
+      <p>Возраст от 25 до 70 лет</p>
+      <p>Выплаты по выполнению варки</p>
+      <p>Оплата за 1 кг от 100 тысяч</p>
+      <p>Можно без опыта</p>
+      <p>Работа одному или в паре</p>
+      <p>Лабораторию предоставляем</p>
     </div>
 
     <div class="card">
       <img src="https://img.photohub.my/i/91/919014b5bd98db609a4b6883b4adfdb1.jpg">
-      <p>Команда</p>
+      <p>Возраст от 18 лет</p>
+      <p>Спортивное телосложение</p>
+      <p>Задачи: поджоги/наказания</p>
+      <p>Команда 3+ человек</p>
+      <p>Выплаты от 20 000+</p>
     </div>
 
     <div class="card">
       <img src="https://img.photohub.my/i/95/95861bef42ede2916c448b9698886032.jpg">
-      <p>Граффити до 10к/день</p>
+      <p>Возраст от 15 лет</p>
+      <p>Выплаты ежедневно</p>
+      <p>Оплата за граффити 150р</p>
+      <p>Доход до 10 000 в день</p>
+      <p>Работа вахтой</p>
     </div>
 
   </div>
