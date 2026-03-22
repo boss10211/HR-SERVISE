@@ -5,24 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HR SERVISE</title>
 
-  <!-- 🔹 FAVICON (иконка сайта) -->
-  <!-- ЗАМЕНИ ССЫЛКУ НИЖЕ на свою иконку -->
   <link rel="icon" href="https://img.photohub.my/i/e1/e1a55675ee2bf4497ae07bd0ef94f64f.jpg">
 
   <style>
     body {
       margin: 0;
       font-family: ARIAL BLACK, sans-serif;
-
-      /* 🔹 ФОН САЙТА (замени ссылку) */
       background: url('https://img.photohub.my/i/d3/d353c26d66278c9efbc8c9fbfd99ca71.jpg') no-repeat center/cover fixed;
     }
 
-    
-
-    /* 🔹 БАННЕР (верхняя картинка) */
     .banner {
-      background: url('https://img.photohub.my/i/96/96d2691c6eb0fd1c4dcf8e09708f0f4b.jpg') center/cover no-repeat; /* ← замени */
+      background: url('https://img.photohub.my/i/96/96d2691c6eb0fd1c4dcf8e09708f0f4b.jpg') center/cover no-repeat;
       height: 300px;
       display: flex;
       align-items: center;
@@ -41,8 +34,8 @@
     .contacts button {
       padding: 12px 24px;
       font-size: 16px;
-      background:radial-gradient(SaddleBrown, 75%, black);;
-      color:#D4AF37;
+      background: radial-gradient(SaddleBrown, 75%, black);
+      color: #D4AF37;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -56,7 +49,7 @@
       background: radial-gradient(SaddleBrown, 75%, black);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      color:#D4AF37;
+      color: #D4AF37;
     }
 
     .vacancies {
@@ -67,7 +60,7 @@
     }
 
     .card {
-      background: radial-gradient(SaddleBrown, 75%, black);;
+      background: radial-gradient(SaddleBrown, 75%, black);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -94,118 +87,153 @@
       font-size: 14px;
       color: #D4AF37;
     }
+
+    /* 📱 АДАПТАЦИЯ */
+    @media (max-width: 768px) {
+
+      body {
+        font-size: 14px;
+      }
+
+      .banner {
+        height: 220px;
+        font-size: 24px;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .contacts {
+        margin: 15px;
+      }
+
+      .contacts button {
+        width: 95%;
+        max-width: 400px;
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      .about {
+        margin: 15px;
+        padding: 15px;
+      }
+
+      .vacancies {
+        padding: 15px;
+        gap: 15px;
+      }
+
+      .card img {
+        height: 150px;
+      }
+
+      .card p {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+    }
+
+    @media (max-width: 400px) {
+
+      .banner {
+        height: 180px;
+        font-size: 20px;
+      }
+
+      .contacts button {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .card p {
+        font-size: 12px;
+      }
+    }
+
   </style>
 </head>
 <body>
 
 <div class="overlay">
 
-  <!-- 🔹 НАЗВАНИЕ В БАННЕРЕ -->
-  <div class="banner">
-    <!-- ← поменяй текст -->
+  <div class="banner"></div>
+
+  <div class="contacts">
+    <a href="https://t.me/hrs_best" target="_blank">
+      <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ ПО ТРУДОУСТРОЙСТВУ</button>
+    </a>
   </div>
 
-  <!-- 🔹 КНОПКА КОНТАКТОВ -->
-  <!-- ЗАМЕНИ ТЕЛЕФОН / ТЕКСТ -->
-<div class="contacts">
-  <a href="https://t.me/hrs_best" target="_blank">
-    <button>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ ПО ТРУДОУСТРОЙСТВУ</button>
-  </a>
-</div>
-
-  <!-- 🔹 ОПИСАНИЕ АГЕНТСТВА -->
   <div class="about">
     <h2>HR SERVISE</h2>
-    <p> Лучшее Кадровое Агентство в России.  </p>
-<p> Мы гордимся нашей репутацией и долгим опытом в данной сфере работы.  </p>
-<p>Работаем с 2010 года по по всей РФ и Странах СНГ.  </p>
-
-<p>Мы предлагаем не только работу а и карьерный рост не засиживаясь на одной вакансии
-
-
-    </p>
+    <p>Лучшее Кадровое Агентство в России.</p>
+    <p>Мы гордимся нашей репутацией и долгим опытом в данной сфере работы.</p>
+    <p>Работаем с 2010 года по всей РФ и Странах СНГ.</p>
+    <p>Мы предлагаем не только работу а и карьерный рост не засиживаясь на одной вакансии</p>
   </div>
 
-  <!-- 🔹 ВАКАНСИИ -->
   <div class="vacancies">
 
-    <!-- КУРЬЕР -->
     <div class="card">
-      <img src="https://img.photohub.my/i/d6/d6d4e9637c8af0c6dd4f825c1fb67304.jpg"> <!-- ← картинка -->
-      <h3></h3> <!-- ← название -->
+      <img src="https://img.photohub.my/i/d6/d6d4e9637c8af0c6dd4f825c1fb67304.jpg">
       <p>Возраст от 14 до 45 лет</p>
-<p>Система выплат каждые 3 дня BTC/LTK/VISA </p>
-<p>Оплата за адрес 600-1000р</p>
-<p>Полное обучение с нуля </p>
-<p>Гибкий график работы под себя </p>
-<p>Тех поддержка 24/7</p>
-<p>3-варианта устройства Документы/залог/наработка залога</p> <!-- ← описание -->
+      <p>Система выплат каждые 3 дня BTC/LTK/VISA</p>
+      <p>Оплата за адрес 600-1000р</p>
+      <p>Полное обучение с нуля</p>
+      <p>Гибкий график работы под себя</p>
+      <p>Тех поддержка 24/7</p>
+      <p>3-варианта устройства Документы/залог/наработка залога</p>
     </div>
 
-    <!-- СКЛАД -->
     <div class="card">
       <img src="https://img.photohub.my/i/b7/b7e47f6f0ded260e2465ba283b90b212.jpg">
-     
-      <p>Возраст от 18 лет </p>
-<p>Система выплат каждые 3 дня BTC/LTK/VISA</p>
-<p>Оплата за месяц от 500 000р</p>
-<p>График работы 5/2</p>
-<p>Полное обучение  работе </p>
-<p>2 вариианта устройства </p>
-<p>Документы/залог или повышение от курьера</p> 
-<p>Наличие водительских прав привествуется</p>
+      <p>Возраст от 18 лет</p>
+      <p>Система выплат каждые 3 дня BTC/LTK/VISA</p>
+      <p>Оплата за месяц от 500 000р</p>
+      <p>График работы 5/2</p>
+      <p>Полное обучение работе</p>
+      <p>2 варианта устройства</p>
+      <p>Документы/залог или повышение от курьера</p>
+      <p>Наличие водительских прав приветствуется</p>
     </div>
 
-    <!-- ВОДИТЕЛЬ -->
     <div class="card">
       <img src="https://img.photohub.my/i/68/683c1d778233ed641b0d229ea792925e.jpg">
-     
-      <p>Возраст от 18лет при наличии прав </p>
-<p>Возможность работы на личном/Арендном авто</p>
-<p>Рейсы 3-4 в неделю </p>
-<p>Оплата до 2500$</p>
-<p>Полное обучение работе,фото примеры тайников в машине и опта</p>
-<p>2 варианта устройства  Документы/Залог</p>
+      <p>Возраст от 18 лет при наличии прав</p>
+      <p>Возможность работы на личном/арендном авто</p>
+      <p>Рейсы 3-4 в неделю</p>
+      <p>Оплата до 2500$</p>
+      <p>Полное обучение работе</p>
+      <p>2 варианта устройства Документы/Залог</p>
     </div>
 
-   <!-- ХИМИК -->
     <div class="card">
       <img src="https://img.photohub.my/i/ea/ea5688113e19f0e4365cc06fa04450fb.jpg">
-      
-      <p>Возраст от 25 до 70 лет
-<p>Выплаты по выполнению варки </p>
-<p>Оплата за 1 кг от 100тысяч </p>
-<p>Наличе прав </p>
-<p>МОЖНО БЕЗ ОПЫТА</p>
-<p>Можно работать как одному так и в паре людей </p>
-<p>Лабораторию предоставляем  </p>
+      <p>Возраст от 25 до 70 лет</p>
+      <p>Выплаты по выполнению варки</p>
+      <p>Оплата за 1 кг от 100 тысяч</p>
+      <p>Можно без опыта</p>
+      <p>Работа одному или в паре</p>
+      <p>Лабораторию предоставляем</p>
     </div>
 
-    <!-- СПОРТ -->
     <div class="card">
       <img src="https://img.photohub.my/i/91/919014b5bd98db609a4b6883b4adfdb1.jpg">
-      
-      <p>Возраст от 18 лет 
-<p>Спортивного телосложения умение выполнять грязную работу </p>
-<p>Задачи: Поджоги/Наказания </p>
-<p>Команда 3+ человек </p>
-<p>Выплаты от 20 000+Доп оплата за доп наказания </p>
-<p>Выплаты сразу по предоставлению наказания </p>
+      <p>Возраст от 18 лет</p>
+      <p>Спортивное телосложение</p>
+      <p>Задачи: поджоги/наказания</p>
+      <p>Команда 3+ человек</p>
+      <p>Выплаты от 20 000+</p>
     </div>
 
-
-    <!-- ГРАФИТЧИК -->
     <div class="card">
       <img src="https://img.photohub.my/i/95/95861bef42ede2916c448b9698886032.jpg">
-      
       <p>Возраст от 15 лет</p>
-<p>Выплаты ежедневно по сдаче работы BTC/LTK/VISA </p>
-<p>Оплата за 1 граффити 150р траффарет </p>
-<p>Возможность заработка от 10 тысяч в день </p>
-<p>График работы 6/1 Так же работа вахтой в других городах</p> 
-<p>Устройство по Анкете </p>
+      <p>Выплаты ежедневно</p>
+      <p>Оплата за граффити 150р</p>
+      <p>Доход до 10 000 в день</p>
+      <p>Работа вахтой</p>
     </div>
-
 
   </div>
 
